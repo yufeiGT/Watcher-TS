@@ -1,0 +1,51 @@
+{
+	"name": "@~crazy/watcher",
+	"version": "3.2.6",
+	"description": "对象观察者",
+	"main": "dist/index.js",
+	"types": "dist/typings/index.d.ts",
+	"scripts": {
+		"dev": "webpack server --hot --config webpack.dev.js",
+		"demo": "webpack --config webpack.demo.js",
+		"build": "webpack --config webpack.prod.js",
+		"prebuild": "tsc -p src",
+		"build:patch": "webpack --config webpack.prod.js",
+		"prebuild:patch": "npm version patch && tsc -p src",
+		"build:minor": "webpack --config webpack.prod.js",
+		"prebuild:minor": "npm version minor && tsc -p src",
+		"build:major": "webpack --config webpack.prod.js",
+		"prebuild:major": "npm version major && tsc -p src"
+	},
+	"keywords": [
+		"JavaScript",
+		"TypeScript"
+	],
+	"author": "GT",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.18.6",
+		"@babel/preset-env": "^7.18.6",
+		"@vue/compiler-sfc": "^3.2.37",
+		"babel-loader": "^8.2.5",
+		"clean-webpack-plugin": "^4.0.0",
+		"core-js": "^3.23.3",
+		"css-loader": "^6.7.1",
+		"html-webpack-plugin": "^5.5.0",
+		"node-sass": "^7.0.1",
+		"sass-loader": "^13.0.2",
+		"style-loader": "^3.3.1",
+		"ts-loader": "^9.3.1",
+		"tsconfig-paths-webpack-plugin": "^3.5.2",
+		"typescript": "^4.7.4",
+		"vue": "^3.2.36",
+		"vue-loader": "^17.0.0",
+		"vue-router": "^4.1.0",
+		"webpack": "^5.73.0",
+		"webpack-cli": "^4.10.0",
+		"webpack-dev-server": "^4.9.3",
+		"webpack-merge": "^5.8.0"
+	},
+	"dependencies": {
+		"@~crazy/spanner": "^0.0.7"
+	}
+}

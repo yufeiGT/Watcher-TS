@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"sourceMap": true,
+		"allowJs": true,
+		"target": "ES2015",
+		"module": "ES2015",
+		"lib": [
+			"es2016",
+			"dom"
+		],
+		"declaration": true,
+		"declarationDir": "../dist/typings/",
+		"outDir": "../dist/",
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+	},
+	"files": [
+		"./index.ts"
+	],
+	"include": [
+		"./**/*",
+		"./**/*.ts",
+		"./**/*.d.ts",
+	]
+}
